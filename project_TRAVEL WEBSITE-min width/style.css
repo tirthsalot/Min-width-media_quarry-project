@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: black;
+}
+
+/* --- Navigation --- */
+header {
+  background-color: antiquewhite;
+  color: ;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  /* color: var(--text-light); */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  font-weight: 4px;
+  /* background-color: #21867a; */
+  color: #0a412c;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: aqua;
+}
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://img.freepik.com/free-photo/view-travel-items-assortment-still-life_23-2149617645.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: beige;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0a412c;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  /* transition: background 0.3s; */
+}
+
+.btn:hover {
+  background: #21867a;
+}
+
+.destinations {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.destinations h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s; */
+}
+
+.card:hover {
+  /* transform: translateY(-10px); */
+}
+
+.card img {
+  width: 70%;
+  height: 15%px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: rgba(6, 95, 95, 0.719);
+  color: violet;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+.card-grid {
+
+  margin-top: 30px;
+  
+}
+.card1 {
+  margin: auto;
+  align-items: center;
+  padding-top: 20px;
+  height: 500px;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 900px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.left {
+  margin-right: 50px;
+}
+.img-4 {
+  padding-top: 25px;
+  height: 250px;
+}
+.card-2{
+    margin-top: 50px;
+}
+
+.footer {
+  background-color: #0b3d4f;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  max-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #f4d03f;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff33;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+  .navbar{
+    background-color: #0a412c;
+    height: 60px;
+    color: white;
+  }
+  .nav-links{
+    display: none !important;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .card1 {
+    width: 102%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: -5px;
+  }
+  .txt-1{
+    font-size: 15px;
+  }
+  .card-2{
+    width: 102%;
+    height: auto;
+    border-radius: 2px;
+
+  }
+
+
+}
+
+@media (min-width: 576px) {
+  header {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .card1 {
+    width: 90%;
+  }
+  .txt-1{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .destinations h2 {
+    font-size: 2.2rem;
+  }
+
+  .card1 {
+    width: 80%;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+  .txt-1{
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .card1 {
+    width: 900px;
+  }
+
+  nav ul li {
+    margin-left: 25px;
+  }
+  .txt-1{
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .destinations {
+    padding: 5rem 5%;
+  }
+  .txt-1{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    padding: 1.5rem 8%;
+  }
+
+  .destinations {
+    padding: 6rem 8%;
+  }
+
+  .footer-container {
+    justify-content: space-around;
+  }
+}
